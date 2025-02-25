@@ -28,11 +28,11 @@
             <p class="p-2">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
             <div class="cards grid grid-cols-3 mt-14 gap-5 p-2">
-                <div class="box cursor-pointer border p-4 text-center rounded-md">
+                <div id="add-money-box" class="box cursor-pointer border p-4 text-center rounded-md">
                     <img class="w-8 mx-auto" src="assets/wallet 1.png" alt="">
                     <h3>Add Money</h3>
                 </div>
-                <div class="box cursor-pointer border p-4 text-center rounded-md">
+                <div id="cashout-box" class="box cursor-pointer border p-4 text-center rounded-md">
                     <img class="w-8 mx-auto" src="assets/send 1.png" alt="">
                     <h3>Cashout</h3>
                 </div>
@@ -85,6 +85,40 @@
                 </div>
               </div>
         </section>
+
+
+
+        <section id="chasout">
+            <h3 class="mt-5 ml-10">Cash Out</h3>
+            <fieldset class="fieldset ml-10">
+                <label class="fieldset-label">Account Number</label>
+                <input value="01234567890" id="account-number" type="number" class="input" placeholder="type your number" required />
+                <label class="fieldset-label">Amount</label>
+                <input id="amount-number" type="number" class="input" placeholder="type your amount" required />
+                <label class="fieldset-label">Pin</label>
+                <input value="1234" id="pin-number" type="text" class="input" placeholder="type your Pin" required />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="add-money"  id="login-btn" type="submit"  class="btn btn-neutral bg-blue-700 mt-4">Cash Out</button>
+              </fieldset>
+
+
+        </section>
+
+        <section id="Add-money">
+            <h3 class="mt-5 ml-10">Add Money</h3>
+            <fieldset class="fieldset ml-10">
+                <label class="fieldset-label">Account Number</label>
+                <input value="01234567890" id="account-number" type="number" class="input" placeholder="type your number" required />
+                <label class="fieldset-label">Amount</label>
+                <input id="amount-number" type="number" class="input" placeholder="type your amount" required />
+                <label class="fieldset-label">Pin</label>
+                <input value="1234" id="pin-number" type="text" class="input" placeholder="type your Pin" required />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="add-money"  id="login-btn" type="submit"  class="btn btn-neutral bg-blue-700 mt-4">Cash Out</button>
+              </fieldset>
+
+
+        </section>
         </header>
         
 
@@ -92,5 +126,6 @@
 
 
    <script src="script/addMoney.js"></script>
+   <script src="script/toggle.js"></script>
 </body>
 </html>

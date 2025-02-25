@@ -14,7 +14,7 @@
                 <div class="flex justify-around">
                     <img class="w-16" src="assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold">$ 45000</h1>
+                    <h1 class="text-3xl font-bold">$ <span id="main-balance">45000</span></h1>
                     <p class="border rounded p-1">Available Balance</p>
                 </div>
                 </div>
@@ -73,10 +73,12 @@
                           <fieldset class="fieldset">
                             <label class="fieldset-label">Account Number</label>
                             <input value="01234567890" id="account-number" type="number" class="input" placeholder="type your number" required />
+                            <label class="fieldset-label">Amount</label>
+                            <input id="amount-number" type="number" class="input" placeholder="type your amount" required />
                             <label class="fieldset-label">Pin</label>
                             <input value="1234" id="pin-number" type="text" class="input" placeholder="type your Pin" required />
                             <div><a class="link link-hover">Forgot password?</a></div>
-                            <button id="login-btn" class="btn btn-neutral bg-blue-700 mt-4">Add Money</button>
+                            <button id="add-money"  id="login-btn" type="submit"  class="btn btn-neutral bg-blue-700 mt-4">Add Money</button>
                           </fieldset>
                     </div>
                   </div>
@@ -89,6 +91,6 @@
     </section>
 
 
-   
+   <script src="script/addMoney.js"></script>
 </body>
 </html>

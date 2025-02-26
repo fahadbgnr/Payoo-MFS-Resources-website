@@ -29,12 +29,19 @@ if(convertedAmount <0){
 
         const container = document.getElementById('transaction-container');
 
-        const p = document.createElement('p');
-        p.innerText = `
-        added ${convertedAmount} from ${accountNumber} accountNumber
-        `
-        container.appendChild(p);
-            
+        // const p = document.createElement('p');
+        // p.innerText = `
+        // added ${convertedAmount} from ${accountNumber} accountNumber
+        // `
+        // container.appendChild(p);
+            const div = document.createElement('div');
+            div.classList.add('bg-red-400');
+            div.innerHTML = `
+            <h3 class="text-yellow-300">Added money form ${selectedBank}</h3>
+            <h4>${convertedAmount}</h4>
+            <p>account number:${accountNumber} </p>
+            `
+            container.appendChild(div);
         
     }
     else{
